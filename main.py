@@ -24,7 +24,7 @@ try:
 except S3Error as e:
     print("Error occurred:", e)
 
-st.set_page_config(page_title="Item Tracker", page_icon="logo.png")
+st.set_page_config(page_title="Item Tracker", page_icon="logo.png", layout="wide")
 
 
 
@@ -211,5 +211,6 @@ elif st.session_state.currentScreen == "update_item":
 
 elif st.session_state.currentScreen == "delete_item":
     deleteItemScreen()
+
 
 
